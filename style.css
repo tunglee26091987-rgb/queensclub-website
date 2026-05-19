@@ -1004,3 +1004,23 @@ a:hover { color: var(--gold-bright); }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gold-bright); }
+
+/* ▒▒▒ BRAND LOGO (crown) ▒▒▒ */
+.brand-crown {
+  width: auto;
+  fill: var(--gold);
+  flex: none;
+  transition: fill 0.3s var(--ease-out);
+}
+.nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.nav-brand .brand-crown { height: 1.05em; }
+.nav-brand:hover .brand-crown { fill: var(--gold-bright); }
+.footer-brand .footer-crown {
+  display: block;
+  height: 2.6rem;
+  margin-bottom: 0.7rem;
+}
