@@ -1038,7 +1038,7 @@ a:hover { color: var(--gold-bright); }
   margin-bottom: 1.4rem;
 }
 .hero-logo {
-  height: clamp(5rem, 11vw, 8.5rem);
+  height: clamp(3rem, 5.5vw, 5rem);
   width: auto;
   animation: logoFloat 5.5s ease-in-out infinite;
 }
