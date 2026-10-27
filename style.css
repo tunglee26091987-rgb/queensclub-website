@@ -1067,3 +1067,30 @@ a:hover { color: var(--gold-bright); }
 @media (prefers-reduced-motion: reduce) {
   .hero-logo, .hero-logo-shine { animation: none; }
 }
+
+/* ─────────────────────────────────────────────────────────────────────
+   27.10.2026 — Vung bam cho ngon tay tren dien thoai.
+   Do bang Chromium that o 390px: link tel: cao 17–21px, WhatsApp 18–41px.
+   Google doi >=48px cho vung bam; duoi do la mot nguon mat khach that,
+   va dien thoai la kenh LON NHAT cua tiem (~92 cuoc/thang).
+   Chi noi cho tel: va wa.me, chi tren dien thoai, va KHONG doi khoang
+   dong chu xung quanh (dung inline-flex + align-items nen chu van thang hang).
+   ───────────────────────────────────────────────────────────────────── */
+@media (max-width: 760px) {
+  a[href^="tel:"],
+  a[href*="wa.me"] {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 2px;
+    /* gach chan ro hon: tren dien thoai khach phai thay ngay day la cho bam */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  /* Trong khoi lien he, cho chung thanh mot hang rieng du be de bam */
+  .visit a[href^="tel:"],
+  .visit a[href*="wa.me"] {
+    min-height: 52px;
+  }
+}
